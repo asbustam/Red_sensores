@@ -1,0 +1,111 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+# Date created = 21:43:40  January 03, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		emisor_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX V"
+set_global_assignment -name DEVICE 5M570ZF256C5
+set_global_assignment -name TOP_LEVEL_ENTITY Block1
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.0.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:43:40  JANUARY 03, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "NO HEAT SINK WITH STILL AIR"
+set_global_assignment -name VHDL_FILE registro_sostenimiento_fvhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_checkvhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_Xor_nentradas_checkvhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_nor_hibernacionvhdl.vhd
+set_global_assignment -name VHDL_FILE comparador_iniciovhdl.vhd
+set_global_assignment -name VHDL_FILE comparador_conf_frecvhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_nor_5_vhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_nor_4_vhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_nor_3_vhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_nor_2_vhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_nor_1_vhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_5_Vhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_4_Vhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_3_Vhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_2_Vhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_1_Vhdl.vhd
+set_global_assignment -name VHDL_FILE registro_sostenimiento_sensor_Vhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_xor_nentradasVhdl.vhd
+set_global_assignment -name VHDL_FILE puerta_or_dato_okVhdl.vhd
+set_global_assignment -name VHDL_FILE mux_8a1Vhdl.vhd
+set_global_assignment -name VHDL_FILE comparador_trama_okvhdl.vhd
+set_global_assignment -name VHDL_FILE emisor.vhd
+set_global_assignment -name BDF_FILE Block1.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simulacion_sist_dig.vwf
+set_location_assignment PIN_P2 -to start
+set_location_assignment PIN_M4 -to stop
+set_location_assignment PIN_L4 -to resetn
+set_location_assignment PIN_L1 -to tx[0]
+set_location_assignment PIN_L2 -to tx[1]
+set_location_assignment PIN_K2 -to tx[2]
+set_location_assignment PIN_K3 -to tx[3]
+set_location_assignment PIN_J3 -to tx[4]
+set_location_assignment PIN_K1 -to tx[5]
+set_location_assignment PIN_J1 -to tx[6]
+set_location_assignment PIN_J2 -to tx[7]
+set_location_assignment PIN_H2 -to rx[0]
+set_location_assignment PIN_H3 -to rx[1]
+set_location_assignment PIN_G3 -to rx[2]
+set_location_assignment PIN_H1 -to rx[3]
+set_location_assignment PIN_G1 -to rx[4]
+set_location_assignment PIN_G2 -to rx[5]
+set_location_assignment PIN_F2 -to rx[6]
+set_location_assignment PIN_F3 -to rx[7]
+set_location_assignment PIN_E3 -to adc_sensor[0]
+set_location_assignment PIN_D1 -to adc_sensor[7]
+set_location_assignment PIN_C3 -to adc_sensor[6]
+set_location_assignment PIN_D3 -to adc_sensor[5]
+set_location_assignment PIN_D2 -to adc_sensor[4]
+set_location_assignment PIN_E2 -to adc_sensor[3]
+set_location_assignment PIN_E1 -to adc_sensor[2]
+set_location_assignment PIN_F1 -to adc_sensor[1]
+set_location_assignment PIN_E4 -to led
+set_location_assignment PIN_C2 -to led_stop
+set_location_assignment PIN_N1 -to sinc_tx
+set_location_assignment PIN_M3 -to sin_rx
+set_global_assignment -name VHDL_FILE ANTIREBOTE.vhd
+set_global_assignment -name VHDL_FILE CLOCK_DIV.vhd
+set_location_assignment PIN_H5 -to clock_Normal
