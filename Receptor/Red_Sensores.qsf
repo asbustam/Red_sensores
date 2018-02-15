@@ -1,0 +1,127 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2016  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel MegaCore Function License Agreement, or other 
+# applicable license agreement, including, without limitation, 
+# that your use is for the sole purpose of programming logic 
+# devices manufactured by Intel and sold by Intel or its 
+# authorized distributors.  Please refer to the applicable 
+# agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+# Date created = 09:30:25  January 03, 2018
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Red_Sensores_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX V"
+set_global_assignment -name DEVICE 5M570ZF256C5
+set_global_assignment -name TOP_LEVEL_ENTITY Diagrama
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 16.1.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "09:30:25  JANUARY 03, 2018"
+set_global_assignment -name LAST_QUARTUS_VERSION "16.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR "-1"
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name VHDL_FILE CONTROLADOR.vhd
+set_global_assignment -name VHDL_FILE decoder_de_bcd_a_7segmentos.vhd
+set_global_assignment -name VHDL_FILE MUX4a1.vhd
+set_global_assignment -name VHDL_FILE MUX8a1.vhd
+set_global_assignment -name VHDL_FILE MUX2a1.vhd
+set_global_assignment -name VHDL_FILE REGISTRO_SOSTENIMIENTO.vhd
+set_global_assignment -name VHDL_FILE COMPARADOR_DE_8BITS.vhd
+set_global_assignment -name VHDL_FILE ANTIREBOTE.vhd
+set_global_assignment -name BDF_FILE Diagrama.bdf
+set_global_assignment -name VHDL_FILE bin2bcd9.vhd
+set_global_assignment -name VHDL_FILE SEPARADOR_BINARIO.vhd
+set_global_assignment -name BDF_FILE convertidor_prueba.bdf
+set_global_assignment -name VHDL_FILE puerta_Xor.vhd
+set_global_assignment -name BDF_FILE bloque.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name VHDL_FILE contador.vhd
+set_global_assignment -name VHDL_FILE contador_3_bits.vhd
+set_location_assignment PIN_P2 -to start
+set_location_assignment PIN_M4 -to stop
+set_location_assignment PIN_J2 -to tx[7]
+set_location_assignment PIN_L1 -to tx[0]
+set_location_assignment PIN_L2 -to tx[1]
+set_location_assignment PIN_K2 -to tx[2]
+set_location_assignment PIN_K3 -to tx[3]
+set_location_assignment PIN_J3 -to tx[4]
+set_location_assignment PIN_K1 -to tx[5]
+set_location_assignment PIN_J1 -to tx[6]
+set_location_assignment PIN_H2 -to rx[0]
+set_location_assignment PIN_H3 -to rx[1]
+set_location_assignment PIN_G3 -to rx[2]
+set_location_assignment PIN_H1 -to rx[3]
+set_location_assignment PIN_G1 -to rx[4]
+set_location_assignment PIN_G2 -to rx[5]
+set_location_assignment PIN_F2 -to rx[6]
+set_location_assignment PIN_F3 -to rx[7]
+set_global_assignment -name QIP_FILE veinticuatro.qip
+set_location_assignment PIN_N3 -to decena[0]
+set_location_assignment PIN_N2 -to decena[1]
+set_location_assignment PIN_N1 -to decena[2]
+set_location_assignment PIN_M3 -to decena[3]
+set_location_assignment PIN_M2 -to decena[4]
+set_location_assignment PIN_M1 -to decena[5]
+set_location_assignment PIN_L3 -to decena[6]
+set_location_assignment PIN_E3 -to unidades[0]
+set_location_assignment PIN_F1 -to unidades[1]
+set_location_assignment PIN_E1 -to unidades[2]
+set_location_assignment PIN_E2 -to unidades[3]
+set_location_assignment PIN_D2 -to unidades[4]
+set_location_assignment PIN_D3 -to unidades[5]
+set_location_assignment PIN_C3 -to unidades[6]
+set_global_assignment -name QIP_FILE cuatro.qip
+set_global_assignment -name QIP_FILE ID.qip
+set_location_assignment PIN_H5 -to clock
+set_location_assignment PIN_L4 -to resetn
+set_location_assignment PIN_D15 -to sincrx
+set_location_assignment PIN_D16 -to sinctx
+set_global_assignment -name QIP_FILE ID_ENVIAR.qip
+set_global_assignment -name VHDL_FILE CLOCK_DIV.vhd
+set_location_assignment PIN_D1 -to enviar_trama
+set_location_assignment PIN_E4 -to led
+set_location_assignment PIN_C2 -to led_stop
+set_location_assignment PIN_C14 -to tarea[0]
+set_location_assignment PIN_C15 -to tarea[1]
+set_location_assignment PIN_E15 -to valor_sensor[0]
+set_location_assignment PIN_B14 -to valor_sensor[1]
+set_location_assignment PIN_D13 -to valor_sensor[2]
+set_location_assignment PIN_C12 -to valor_sensor[3]
+set_global_assignment -name VHDL_FILE puerta_Xor_RX.vhd
+set_global_assignment -name VHDL_FILE puerta_Xor_RX2.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
